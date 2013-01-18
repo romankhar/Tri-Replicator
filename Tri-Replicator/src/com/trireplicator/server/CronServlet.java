@@ -17,12 +17,14 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.trireplicator.client.SynchronizerService;
-import com.trireplicator.client.TrainingLogException;
+import com.trireplicator.shared.SynchronizerService;
+import com.trireplicator.shared.TrainingLogException;
 
 
 /**
- * This servlet needs to be called periodically by the cron job of Google App Engine It will run replication between Trainingpeaks.com and USAT site for all registered users
+ * This servlet is called periodically by the cron job of Google App Engine
+ * It can also be called directly if needed (like from an Admin page) 
+ * It runs replication between Trainingpeaks.com and USAT site for all registered users
  * 
  * @author Roman Kharkovski
  * 

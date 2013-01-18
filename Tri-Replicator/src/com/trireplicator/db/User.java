@@ -26,7 +26,7 @@ import com.trireplicator.util.ServerUtils;
 /**
  * This class is used to store all users in the local database
  * 
- * @author Roman
+ * @author Roman Kharkovski, http://kharkovski.blogspot.com
  */
 @Entity
 public class User {  

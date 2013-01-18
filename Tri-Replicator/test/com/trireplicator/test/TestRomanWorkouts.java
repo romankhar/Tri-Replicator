@@ -16,9 +16,9 @@ import java.util.logging.Logger;
 
 import junit.framework.Assert;
 
-import com.trireplicator.client.WorkoutSession;
 import com.trireplicator.server.Debug;
 import com.trireplicator.server.SynchronizerServiceImpl;
+import com.trireplicator.shared.WorkoutSession;
 
 public class TestRomanWorkouts {
 	private static final Logger log = Logger.getLogger(TestRomanWorkouts.class.getName());

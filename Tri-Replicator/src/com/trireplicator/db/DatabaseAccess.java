@@ -17,10 +17,15 @@ import java.util.logging.Logger;
 import javax.persistence.EntityManager;
 import javax.persistence.Query;
 
-import com.trireplicator.client.MoreThanOneUserFound;
-import com.trireplicator.client.UserNotFound;
+import com.trireplicator.shared.MoreThanOneUserFound;
+import com.trireplicator.shared.UserNotFound;
 
-
+/**
+ * This is utility class that provides all of the operations for working with the database
+ * No other class in the project works with the database directly. Only via this class
+ * 
+ * @author Roman Kharkovski, http://kharkovski.blogspot.com
+ */
 public class DatabaseAccess {
 
 	private static final Logger log = Logger.getLogger(DatabaseAccess.class.getName());

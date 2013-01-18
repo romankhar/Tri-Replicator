@@ -8,7 +8,7 @@
  *  Created: December 19, 2012
  */
 
-package com.trireplicator.client;
+package com.trireplicator.shared;
 
 import java.util.Date;
 
@@ -17,7 +17,11 @@ import com.google.gwt.user.client.rpc.RemoteServiceRelativePath;
 
 /**
  * The client side stub for the RPC service.
- * This is the main interface of the application - all external calls must be made to this API
+ * This is the main interface of the application - all external calls must be made to this API.
+ * Initially this is only called by the GWT clients from the browser, but in the future server
+ * can expose this API via REST, SOAP, etc.
+ * 
+ * @author Roman Kharkovski, http://kharkovski.blogspot.com
  */
 @RemoteServiceRelativePath("synchronizer")
 public interface SynchronizerService extends RemoteService {

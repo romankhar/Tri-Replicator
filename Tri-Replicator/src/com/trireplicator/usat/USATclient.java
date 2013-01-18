@@ -32,17 +32,17 @@ import com.gargoylesoftware.htmlunit.html.HtmlRadioButtonInput;
 import com.gargoylesoftware.htmlunit.html.HtmlSelect;
 import com.gargoylesoftware.htmlunit.html.HtmlSubmitInput;
 import com.gargoylesoftware.htmlunit.html.HtmlTextInput;
-import com.trireplicator.client.TrainingLogException;
-import com.trireplicator.client.WorkoutSession;
-import com.trireplicator.client.WorkoutSession.WorkoutType;
 import com.trireplicator.server.TrainingAPI;
+import com.trireplicator.shared.TrainingLogException;
+import com.trireplicator.shared.WorkoutSession;
+import com.trireplicator.shared.WorkoutSession.WorkoutType;
 
 /**
  * This class allows one to get and put data into the USAT NCC website: http://www.race-tracker.net/usat/admin/add_indresults.cfm
+ * The USAT site does not have an API, so we are using screen scraping technology and HTMLUnit to interact with the site - 
+ * this could be broken easily when USAT changes their site layout...
  * 
- * The USAT site does not have an API, so we are using screen scraping technology and HTMLUnit to interact with the site - this could be broken easily when USAT changes their site layout...
- * 
- * @author Roman
+ * @author Roman Kharkovski, http://kharkovski.blogspot.com
  */
 public class USATclient implements TrainingAPI {
 	private static final Logger log = Logger.getLogger(USATclient.class.getName());

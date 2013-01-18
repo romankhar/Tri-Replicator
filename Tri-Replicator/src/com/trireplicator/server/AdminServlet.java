@@ -20,16 +20,21 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.trireplicator.client.SynchronizerService;
-import com.trireplicator.client.TrainingLogException;
-import com.trireplicator.client.Utils;
-import com.trireplicator.client.WorkoutSession;
-import com.trireplicator.client.WorkoutSession.WorkoutType;
 import com.trireplicator.db.DatabaseAccess;
 import com.trireplicator.db.User;
 import com.trireplicator.db.Workout;
+import com.trireplicator.shared.SynchronizerService;
+import com.trireplicator.shared.TrainingLogException;
+import com.trireplicator.shared.Utils;
+import com.trireplicator.shared.WorkoutSession;
+import com.trireplicator.shared.WorkoutSession.WorkoutType;
 
-
+/**
+ * Admin servlet is not accessible to anyone, but administrator of the system
+ * Provides browser based UI to do admin tasks (delete users, etc.) 
+ * 
+ * @author Roman Kharkovski, http://kharkovski.blogspot.com
+ */
 @SuppressWarnings("serial")
 public class AdminServlet extends HttpServlet {
 	private static final Logger log = Logger.getLogger(AdminServlet.class.getName());

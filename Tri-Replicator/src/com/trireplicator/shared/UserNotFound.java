@@ -8,31 +8,36 @@
  *  Created: December 19, 2012
  */
 
-package com.trireplicator.client;
+package com.trireplicator.shared;
 
-public class TrainingLogException extends Exception {
+/**
+ * Indicates that the user is not found in the system (in the repository of existing users)
+ * 
+ * @author Roman Kharkovski, http://kharkovski.blogspot.com
+ * 
+ */
+public class UserNotFound extends Exception {
 
-	private static final long serialVersionUID = -5344433421735470539L;
+	private static final long serialVersionUID = -3340468946801978432L;
 
-	public TrainingLogException() {
+	public UserNotFound() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 
-	public TrainingLogException(String message, Throwable cause) {
+	public UserNotFound(String message, Throwable cause) {
 		super(message, cause);
 		// TODO Auto-generated constructor stub
 	}
 
-	public TrainingLogException(String message) {
+	public UserNotFound(String message) {
 		super(message);
 		// TODO Auto-generated constructor stub
 	}
 
-	public TrainingLogException(Throwable cause) {
+	public UserNotFound(Throwable cause) {
 		super(cause);
 		// TODO Auto-generated constructor stub
 	}
-
 
 }

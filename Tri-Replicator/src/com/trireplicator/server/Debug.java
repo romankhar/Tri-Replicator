@@ -12,7 +12,7 @@ package com.trireplicator.server;
 
 import java.util.List;
 
-import com.trireplicator.client.WorkoutSession;
+import com.trireplicator.shared.WorkoutSession;
 
 
 public class Debug {

@@ -13,6 +13,11 @@ package com.trireplicator.db;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
+/**
+ * Used to get Persistence Manager Factory
+ * 
+ * @author Roman Kharkovski, http://kharkovski.blogspot.com
+ */
 public class EMFService {
 	private static final EntityManagerFactory emfInstance = Persistence.createEntityManagerFactory("transactions-optional");
 

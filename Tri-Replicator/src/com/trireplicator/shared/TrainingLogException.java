@@ -8,36 +8,31 @@
  *  Created: December 19, 2012
  */
 
-package com.trireplicator.client;
+package com.trireplicator.shared;
 
-/**
- * Indicates that the user is not found in the system (in the repository of existing users)
- * 
- * @author Roman
- * 
- */
-public class UserNotFound extends Exception {
+public class TrainingLogException extends Exception {
 
-	private static final long serialVersionUID = -3340468946801978432L;
+	private static final long serialVersionUID = -5344433421735470539L;
 
-	public UserNotFound() {
+	public TrainingLogException() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 
-	public UserNotFound(String message, Throwable cause) {
+	public TrainingLogException(String message, Throwable cause) {
 		super(message, cause);
 		// TODO Auto-generated constructor stub
 	}
 
-	public UserNotFound(String message) {
+	public TrainingLogException(String message) {
 		super(message);
 		// TODO Auto-generated constructor stub
 	}
 
-	public UserNotFound(Throwable cause) {
+	public TrainingLogException(Throwable cause) {
 		super(cause);
 		// TODO Auto-generated constructor stub
 	}
+
 
 }

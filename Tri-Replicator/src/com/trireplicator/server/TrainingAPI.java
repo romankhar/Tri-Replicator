@@ -13,10 +13,15 @@ package com.trireplicator.server;
 import java.util.Date;
 import java.util.List;
 
-import com.trireplicator.client.TrainingLogException;
-import com.trireplicator.client.WorkoutSession;
+import com.trireplicator.shared.TrainingLogException;
+import com.trireplicator.shared.WorkoutSession;
 
-
+/**
+ * This is connector to 3rd party systems, such as Trainingpeaks.com, etc.
+ * If someone was to add a new connector, say to Garmin site, this interface needs to be implemented
+ * 
+ * @author Roman Kharkovski, http://kharkovski.blogspot.com
+ */
 public interface TrainingAPI {
 	/**
 	 * Initializes the Log facility to be used. This must be called once before any other method 

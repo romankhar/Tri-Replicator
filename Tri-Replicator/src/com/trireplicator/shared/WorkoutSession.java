@@ -8,7 +8,7 @@
  *  Created: December 19, 2012
  */
 
-package com.trireplicator.client;
+package com.trireplicator.shared;
 
 import java.io.Serializable;
 import java.util.Date;
@@ -16,7 +16,13 @@ import java.util.Date;
 import javax.persistence.Embeddable;
 
  
-@Embeddable
+/**
+ * This is the main holding entity for the workout. It gets embedded to be stored in the DB, 
+ * can be used to transfer workouts between server and clients, etc. 
+ * 
+ * @author Roman Kharkovski
+ */
+@Embeddable 
 public class WorkoutSession implements Serializable {
 
 	private static final long serialVersionUID = 6167913802767169351L;

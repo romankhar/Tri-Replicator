@@ -16,9 +16,9 @@ import java.util.List;
 import org.junit.Assert;
 import org.junit.Test;
 
-import com.trireplicator.client.TrainingLogException;
-import com.trireplicator.client.WorkoutSession;
 import com.trireplicator.server.Debug;
+import com.trireplicator.shared.TrainingLogException;
+import com.trireplicator.shared.WorkoutSession;
 import com.trireplicator.trainingpeaks.TrainingPeaksClient;
 
 

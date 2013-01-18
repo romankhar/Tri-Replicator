@@ -8,13 +8,10 @@
  *  Created: December 19, 2012
  */
 
-package com.trireplicator.client;
+package com.trireplicator.shared;
 
 /**
  * Indicates that the user is not found in the system (in the repository of existing users)
- * 
- * @author Roman
- * 
  */
 public class MoreThanOneUserFound extends Exception {
 

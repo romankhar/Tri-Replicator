@@ -24,7 +24,12 @@ import javax.crypto.NoSuchPaddingException;
 import javax.crypto.SecretKey;
 import javax.crypto.spec.SecretKeySpec;
 
-
+/**
+ * Encryption related tools. Used by database manager before storing and when
+ * retrieving data from the DB 
+ * 
+ * @author Roman Kharkovski, http://kharkovski.blogspot.com
+ */
 public class SecurityTools {
 
 	private static final Logger log = Logger.getLogger(SecurityTools.class.getName());

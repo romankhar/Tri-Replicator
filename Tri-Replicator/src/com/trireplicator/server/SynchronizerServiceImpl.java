@@ -19,19 +19,25 @@ import java.util.logging.Logger;
 
 
 import com.google.gwt.user.server.rpc.RemoteServiceServlet;
-import com.trireplicator.client.MoreThanOneUserFound;
-import com.trireplicator.client.SynchronizerService;
-import com.trireplicator.client.TrainingLogException;
-import com.trireplicator.client.UserNotFound;
-import com.trireplicator.client.WorkoutSession;
-import com.trireplicator.client.WorkoutSession.WorkoutType;
 import com.trireplicator.db.AdminEvents;
 import com.trireplicator.db.DatabaseAccess;
 import com.trireplicator.db.User;
 import com.trireplicator.db.Workout;
+import com.trireplicator.shared.MoreThanOneUserFound;
+import com.trireplicator.shared.SynchronizerService;
+import com.trireplicator.shared.TrainingLogException;
+import com.trireplicator.shared.UserNotFound;
+import com.trireplicator.shared.WorkoutSession;
+import com.trireplicator.shared.WorkoutSession.WorkoutType;
 import com.trireplicator.trainingpeaks.TrainingPeaksClient;
 import com.trireplicator.usat.USATclient;
 
+/**
+ * This class implements main server logic of the entire application
+ * It gets called via remote interfaces by GWT clients, etc. 
+ * 
+ * @author Roman Kharkovski, http://kharkovski.blogspot.com
+ */
 public class SynchronizerServiceImpl extends RemoteServiceServlet implements SynchronizerService {
 	/**
 	 * 

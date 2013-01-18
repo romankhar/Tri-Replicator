@@ -18,10 +18,10 @@ import java.util.logging.Logger;
 import org.junit.Assert;
 import org.junit.Test;
 
-import com.trireplicator.client.WorkoutSession;
-import com.trireplicator.client.WorkoutSession.WorkoutType;
 import com.trireplicator.secrets.Constants;
 import com.trireplicator.server.Debug;
+import com.trireplicator.shared.WorkoutSession;
+import com.trireplicator.shared.WorkoutSession.WorkoutType;
 import com.trireplicator.usat.USATclient;
 
 

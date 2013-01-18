@@ -19,14 +19,13 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Transient;
 
-import com.trireplicator.client.Utils;
+import com.trireplicator.shared.Utils;
 
 
 /**
- * This table is designed to keep track of admin events with the server - stop times, start times, etc.
+ * This DB table is designed to keep track of admin events with the server - stop times, start times, etc.
  * 
- * @author Roman
- *  
+ * @author Roman Kharkovski, http://kharkovski.blogspot.com  
  */
 @Entity 
 public class AdminEvents {

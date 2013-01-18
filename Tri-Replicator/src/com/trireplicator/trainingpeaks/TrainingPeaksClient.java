@@ -33,14 +33,16 @@ import com.sun.jersey.api.client.WebResource;
 import com.sun.jersey.api.client.config.ClientConfig;
 import com.sun.jersey.api.client.config.DefaultClientConfig;
 import com.sun.jersey.core.util.MultivaluedMapImpl;
-import com.trireplicator.client.TrainingLogException;
-import com.trireplicator.client.Utils;
-import com.trireplicator.client.WorkoutSession;
-import com.trireplicator.client.WorkoutSession.WorkoutType;
 import com.trireplicator.server.TrainingAPI;
+import com.trireplicator.shared.TrainingLogException;
+import com.trireplicator.shared.Utils;
+import com.trireplicator.shared.WorkoutSession;
+import com.trireplicator.shared.WorkoutSession.WorkoutType;
 
 /**
  * This class allows one to get and put data into the Trainingpeaks.com site using their external APIs
+ * 
+ * @author Roman Kharkovski, http://kharkovski.blogspot.com
  */
 public class TrainingPeaksClient implements TrainingAPI {
 	private static final Logger log = Logger.getLogger(TrainingPeaksClient.class.getName());

@@ -8,17 +8,21 @@
  *  Created: December 19, 2012
  */
 
-package com.trireplicator.client;
+package com.trireplicator.shared;
 
 import java.util.logging.Logger;
 
-
+/**
+ * Static Utility class with useful stuff for client and server
+ * 
+ * @author Roman Kharkovski, http://kharkovski.blogspot.com
+ */
 public class Utils {
 
 	/**
 	 * Version number of the software
 	 */
-	public static final String VERSION = "1.15";
+	public static final String VERSION = "1.16";
 	
 	/**
 	 * This can be used to subtract one day from System.currentTimeMillis()

@@ -19,13 +19,13 @@ import javax.persistence.Id;
 import javax.persistence.OneToOne;
 import javax.persistence.Transient;
 
-import com.trireplicator.client.WorkoutSession;
+import com.trireplicator.shared.WorkoutSession;
 
 
 /**
  * Workout is the holder for the purpose of storing the WorkoutSession + userId + unique ID in the database
- * @author Roman
  *
+ * @author Roman Kharkovski, http://kharkovski.blogspot.com
  */  
 @Entity
 public class Workout {
