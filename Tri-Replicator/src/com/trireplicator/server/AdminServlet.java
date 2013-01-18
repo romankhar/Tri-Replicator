@@ -100,11 +100,6 @@ public class AdminServlet extends HttpServlet {
 		 String nameTP = "TP-Peter336666666";
 		 String passwordTP = "TP-password";
 
-//		String nameUSAT = "romankharkovski@yahoo.com";
-//		String passwordUSAT = "Romeo519";
-//		String nameTP = "romankhar";
-//		String passwordTP = "everflow";
-
 		// Add new active user
 		try {
 			// Test for existing user in the local database
