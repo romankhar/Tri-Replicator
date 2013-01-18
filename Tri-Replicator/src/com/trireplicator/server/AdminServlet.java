@@ -98,7 +98,7 @@ public class AdminServlet extends HttpServlet {
 		 String nameUSAT = "USAT-Peter225555555";
 		 String passwordUSAT = "USAT-password";
 		 String nameTP = "TP-Peter336666666";
-		 String passwordTP = "TP-password";
+		 String passwordTP = "TP-password"; 
 
 		// Add new active user
 		try {
