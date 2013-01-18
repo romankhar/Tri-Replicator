@@ -1,0 +1,6 @@
+This project is created to automate the entry of data from Trainingpeaks.com website into the USAT National Challenge Competition.
+In its current form all data must be entered manually - twice - once into Trainingpeaks and once into USAT site.
+I want the USAT site (http://www.race-tracker.net/usat/admin/add_indresults.cfm) to be automatically populated with data from https://www.trainingpeaks.com accounts of users. This could save few minutes per day for athlete. Considering thosands of athletes entering data over few months period of time, this can save 5,000 (athletes) * 3 min per day * 30 days * 2 months / 60 min per hour = 15,000 hours per year of saved people's time (and improved accuracy of data entry)
+
+Roman Kharkovski
+Dec 18, 2012
